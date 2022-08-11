@@ -2,6 +2,10 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="/source/img/favicon/16.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/source/img/favicon/apple-icon-180x180.png">
+    <link rel="manifest" href="manifest.webmanifest">
     <title>Проект «Кэт энерджи»</title>
   </head>
   <body class="page-body">
@@ -15,13 +19,13 @@
         <div class="wrapper">
           <ul class="main-nav__list">
             <li class="main-nav__item">
-              <a class="main-nav__link" href="index.html">Главная</a>
+              <a class="main-nav__link main-nav__link--active" href="index.html">Главная</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
+              <a class="main-nav__link" href="#">Каталог продукции</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link  main-nav__link--active" href="form.html">Подбор программы</a>
+              <a class="main-nav__link" href="form.html">Подбор программы</a>
             </li>
           </ul>
         </div>
@@ -29,101 +33,164 @@
     </header>
     <main class="page-main">
       <section class="description">
-        <h1 class="description__title">Подбор программы</h1>
-        <p class="description__slogan">Заполните анкету, и мы подберем<br> программу питания для вашего кота</p>
+        <h1 class="description__title">Каталог продукции</h1>
       </section>
 
-      <section class="programm">
-        <form class="programm-form wrapper">
-          <fieldset class="programm-form__fieldset">
-            <legend class="visually-hidden">Информация о вашем питомце</legend>
-            <ul class="programm-form__list">
-              <li class="programm-form__item item">
-                <labeL class="item__label">
-                  <input class="item__name" type="text" name="name-cat" placeholder="Барсик" required> Имя:*
-                </labeL>
-              </li>
-              <li class="programm-form__item item">
-                <labeL class="item__label">
-                  <input class="item__name" type="text" name="weight-cat" placeholder="7" required> Вес(кг):*
-                </labeL>
-              </li>
-              <li class="programm-form__item item">
-                <labeL class="item__label">
-                  <input class="item__name" type="text" name="old-cat" placeholder="7"> Возраст(лет):
-                </labeL>
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset class="programm-form__fieldset">
-            <legend class="visually-hidden">Выбор программы</legend>
-            <ul class="programm-form__list">
-            <li class="programm-form__item item">
-              <label class="item__label">
-                <input class="item__radio" type="radio" name="radio-programm" value="diet" checked> Похудение
-              </label>
-            </li>
-            <li class="programm-form__item item">
-              <label class="item__label">
-                <input class="item__radio" type="radio" name="radio-programm" value="weight-gain"> Набор массы
-              </label>
-            </li>
-            <li class="programm-form__item item">
-              <label class="item__label">
-                <input class="item__radio" type="radio" name="radio-programm" value="no-answer"> Не знаю (нужен ваш совет)
-              </label>
-            </li>
-            </ul>
-          </fieldset>
-          <fieldset class="programm-form__fieldset">
-            <legend class="programm-form__legend">Контактные данные<br> (владельца кота)</legend>
-            <div class="programm-form__item item">
-              <label class="item__label">
-                <input class="item__name item__name--icon-mail" type="email" placeholder="kuklachev@gmail.com" required> E-mail:*
-              </label>
+      <section class="catalog">
+        <h2 class="visually-hidden">Каталог товаров</h2>
+        <ul class="catalog__list">
+          <li class="catalog__item item-catalog">
+            <img src="/source/img/product/chicken-500.png" width="68" height="86" alt="упаковка корма Catenergy со вкусом курицы массой 500гр">
+            <div class="catalog-description">
+              <h3 class="catalog-description__title">Cat Energy<br> Pro 500 г</h3>
+              <dl class="catalog-description__termin termin">
+                <dt>Масса</dt>
+                <dd>500 г</dd>
+                <dt>Вкус</dt>
+                <dd>Курица</dd>
+                <dt>Цена</dt>
+                <dd>700 <span>&#8381;</span>.</dd>
+              </dl>
             </div>
-            <div class="programm-form__item item">
-              <label class="item__label">
-                <input class="item__name item__name--icon-phone" type="tel" placeholder="8 (960) 900-60-90" required> Телефон:*
-              </label>
+            <button class="button catalog__button" type="button">Заказать</button>
+          </li>
+          <li id="pro" class="catalog__item item-catalog">
+            <img src="/source/img/product/chicken-1000.png" width="84" height="100" alt="упаковка корма Catenergy со вкусом курицы массой 1000гр">
+            <div class="catalog-description">
+              <h3 class="catalog-description__title">Cat Energy<br> Pro 1000 г</h3>
+              <dl class="catalog-description__termin termin">
+                <dt>Масса</dt>
+                <dd>1000 г</dd>
+                <dt>Вкус</dt>
+                <dd>Курица</dd>
+                <dt>Цена</dt>
+                <dd>1000 <span>&#8381;</span>.</dd>
+              </dl>
             </div>
-          </fieldset>
-          <fieldset class="programm-form__fieldset">
-            <legend class="visually-hidden">Ваше мнение</legend>
-            <div class="programm-form__item item">
-              <label class="item__label">
-                <textarea class="item__name" rows="5" placeholder="Расскажите обо всех повадках кота"></textarea>
-              </label>
+            <button class="button catalog__button" type="button">Заказать</button>
+          </li>
+          <li class="catalog__item item-catalog">
+            <img src="/source/img/product/fish-500.png" width="68" height="78" alt="упаковка корма Catenergy со вкусом рыбы массой 500гр">
+            <div class="catalog-description">
+              <h3 class="catalog-description__title">Cat Energy<br> Pro 500 г</h3>
+              <dl class="catalog-description__termin termin">
+                <dt>Масса</dt>
+                <dd>500 г</dd>
+                <dt>Вкус</dt>
+                <dd>Рыба</dd>
+                <dt>Цена</dt>
+                <dd>700 <span>&#8381;</span>.</dd>
+              </dl>
             </div>
-          </fieldset>
-          <fieldset class="programm-form__fieldset">
-            <legend class="programm-form__legend">Дополнительно</legend>
-            <ul class="programm-form__list">
-              <li class="programm-form__item item">
-                <labeL class="item__label">
-                  <input class="item__checkbox" type="checkbox" name="sweetener"> Сахарозаменитель
-                </labeL>
-              </li>
-              <li class="programm-form__item item">
-                <labeL class="item__label">
-                  <input class="item__checkbox" type="checkbox" name="water"> Питьевая вода
-                </labeL>
-              </li>
-              <li class="programm-form__item item">
-                <labeL class="item__label">
-                  <input class="item__checkbox" type="checkbox" name="milk"> Молоко
-                </labeL>
-              </li>
-              <li class="programm-form__item item">
-                <labeL class="item__label">
-                  <input class="item__checkbox" type="checkbox" name="vitamins"> Витамины
-                </labeL>
-              </li>
-            </ul>
-          </fieldset>
-          <button class="button programm-form__button" type="submit">Отправить заявку</button>
-          <span>* &mdash; Обязательные поля</span>
-        </form>
+            <button class="button catalog__button" type="button">Заказать</button>
+          </li>
+          <li class="catalog__item item-catalog">
+            <img src="/source/img/product/fish-1000.png" width="84" height="100" alt="упаковка корма Catenergy со вкусом рыбы массой 1000гр">
+            <div class="catalog-description">
+              <h3 class="catalog-description__title">Cat Energy<br> Pro 1000 г</h3>
+              <dl class="catalog-description__termin termin">
+                <dt>Масса</dt>
+                <dd>1000 г</dd>
+                <dt>Вкус</dt>
+                <dd>Рыба</dd>
+                <dt>Цена</dt>
+                <dd>1000 <span>&#8381;</span>.</dd>
+              </dl>
+            </div>
+            <button class="button catalog__button" type="button">Заказать</button>
+          </li>
+          <li id="slim" class="catalog__item item-catalog">
+            <img src="/source/img/product/buckwheat-500.png" width="68" height="78" alt="упаковка корма Catenergy со вкусом гречки массой 500гр">
+            <div class="catalog-description">
+              <h3 class="catalog-description__title">Cat Energy<br> Slim 500 г</h3>
+              <dl class="catalog-description__termin termin">
+                <dt>Масса</dt>
+                <dd>500 г</dd>
+                <dt>Вкус</dt>
+                <dd>Гречка</dd>
+                <dt>Цена</dt>
+                <dd>400 <span>&#8381;</span>.</dd>
+              </dl>
+            </div>
+            <button class="button catalog__button" type="button">Заказать</button>
+          </li>
+          <li class="catalog__item item-catalog">
+            <img src="/source/img/product/buckwheat-1000.png" width="84" height="100" alt="упаковка корма Catenergy со вкусом гречки массой 1000гр">
+            <div class="catalog-description">
+              <h3 class="catalog-description__title">Cat Energy<br> Slim 1000 г</h3>
+              <dl class="catalog-description__termin termin">
+                <dt>Масса</dt>
+                <dd>1000 г</dd>
+                <dt>Вкус</dt>
+                <dd>Гречка</dd>
+                <dt>Цена</dt>
+                <dd>700 <span>&#8381;</span>.</dd>
+              </dl>
+            </div>
+            <button class="button catalog__button" type="button">Заказать</button>
+          </li>
+          <li class="catalog__item item-catalog">
+            <img src="/source/img/product/rice-500.png" width="72" height="84" alt="упаковка корма Catenergy со вкусом риса массой 500гр">
+            <div class="catalog-description">
+              <h3 class="catalog-description__title">Cat Energy<br> Slim 500 г</h3>
+              <dl class="catalog-description__termin termin">
+                <dt>Масса</dt>
+                <dd>500 г</dd>
+                <dt>Вкус</dt>
+                <dd>Рис</dd>
+                <dt>Цена</dt>
+                <dd>500 <span>&#8381;</span>.</dd>
+              </dl>
+            </div>
+            <button class="button catalog__button" type="button">Заказать</button>
+          </li>
+        </ul>
+        <div class="products-show">
+          <p class="products-show__title">Показать еще 100500 товаров</p>
+          <p class="products-show__text">На самом деле вкусов гораздо больше!</p>
+          <a class="button products-show__button" href="#">Показать все</a>
+        </div>
+      </section>
+
+      <section class="optionally">
+        <h2 class="optionally__title">Дополнительные товары</h2>
+        <ul class="optionally__list">
+          <li class="optionally__item item-optionally">
+            <h3 class="item-optionally__title">Сахарозаменитель</h3>
+            <dl class="item-optionally__termin termin">
+              <dt>1 упаковка (100 г)</dt>
+              <dd>200 <span>&#8381;</span>.</dd>
+            </dl>
+            <button class="button optionally__button" type="button">Заказать</button>
+          </li>
+          <li class="optionally__item item-optionally">
+            <h3 class="item-optionally__title">Питьевая вода</h3>
+            <dl class="item-optionally__termin termin">
+              <dt>5 литров</dt>
+              <dd>50 <span>&#8381;</span>.</dd>
+            </dl>
+            <button class="button optionally__button" type="button">Заказать</button>
+          </li>
+          <li class="optionally__item item-optionally">
+            <h3 class="item-optionally__title">Молоко</h3>
+            <dl class="item-optionally__termin termin">
+              <dt>1 литр</dt>
+              <dd>100 <span>&#8381;</span>.</dd>
+            </dl>
+            <button class="button optionally__button" type="button">Заказать</button>
+          </li>
+          <li class="optionally__item item-optionally">
+            <h3 class="item-optionally__title">Витамины</h3>
+            <dl class="item-optionally__termin termin">
+              <dt>1 упаковка (30 г)</dt>
+              <dd>300 <span>&#8381;</span>.</dd>
+            </dl>
+            <button class="button optionally__button" type="button">Заказать</button>
+          </li>
+        </ul>
+        <div class="stock">
+          <p class="stock__slogan">Закажите все<br> и получите чехол для<br> кота в подарок!</p>
+        </div>
       </section>
 
       <section class="map">
@@ -133,7 +200,7 @@
       </section>
     </main>
     <footer class="page-footer">
-      <a class="logo-footer page-footer__logo" href="form.html">
+      <a class="logo-footer page-footer__logo" href="index.html">
         <img src="/source/img/logo/footer-logo-mobile.svg" width="128" height="24" alt="логотип сайта в подвале">
       </a>
       <ul class="page-footer__list social">
