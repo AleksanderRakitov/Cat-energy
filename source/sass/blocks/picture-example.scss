@@ -34,8 +34,9 @@
   display: none;
 
   @media (min-width: $tablet-width) {
-    min-height: 517px;
-    width: auto;
+    width: 690px;
+    height: 517px;
+    object-fit: contain;
   }
 }
 

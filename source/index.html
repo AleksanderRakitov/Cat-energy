@@ -63,6 +63,9 @@
               <p class="description__slogan description__slogan-main">Занялся собой? Займись котом!</p>
             </div>
             <picture>
+              <source type="image/webp" media="(min-width: 1300px)" srcset="img/picture/product-desktop.webp 1x, img/picture/product-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/picture/product-tablet.webp 1x, img/picture/product-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/picture/product-mobile.webp 1x, img/picture/product-mobile@2x.webp 2x">
               <source media="(min-width: 1300px)" srcset="img/picture/product-desktop.png 1x, img/picture/product-desktop@2x.png 2x">
               <source media="(min-width: 768px)" srcset="img/picture/product-tablet.png 1x, img/picture/product-tablet@2x.png 2x">
               <img class="description__main-image" src="img/picture/product-mobile.png" srcset="img/picture/product-mobile@2x.png 2x" width="280" height="270" alt="упаковка кошачего корма Cat Energy Pro с курицей">
@@ -137,11 +140,13 @@
           <div class="meta__wrapper">
             <div class="example__picture picture-example">
               <picture>
-                <source type="image/webp" media="(min-width: 678px)" srcset="img/picture/before-tablet.webp">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/picture/before-tablet.webp 1x, img/picture/before-tablet@2x.webp 2x">
+                <source media="(min-width: 768px)" srcset="img/picture/before-tablet.png 1x, img/picture/before-tablet@2x.png 2x">
                 <img class="picture-example__before picture-example__image picture-example--active" src="img/picture/before-mobile.png" srcset="img/picture/before-mobile@2x.png 2x" width="311" height="240" alt="пример кота перед приёма корма catEnergy">
               </picture>
               <picture>
-                <source type="image/webp" media="(min-width: 678px)" srcset="img/picture/after-tablet.webp">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/picture/after-tablet.webp 1x, img/picture/after-tablet@2x.webp 2x">
+                <source media="(min-width: 768px)" srcset="img/picture/after-tablet.png 1x, img/picture/after-tablet@2x.png 2x">
                 <img class="picture-example__after picture-example__image" src="img/picture/after-mobile.png" srcset="img/picture/after-mobile@2x.png 2x" width="251" height="240" alt="пример кота после приёма корма catEnergy">
               </picture>
               <div class="button__wrapper">
@@ -209,7 +214,9 @@
       </div>
     </footer>
     <script src="js/main-nav.js"></script>
+    <script src="js/main-nav.min.js"></script>
     <script src="js/slider.js"></script>
+    <script src="js/slider.min.js"></script>
   </body>
 </html>
 
