@@ -1,0 +1,35 @@
+.copyright {
+  border-top: 1px solid $grey-150;
+  padding: 22px 0 22px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+    min-width: 163px;
+    padding: 0;
+  }
+}
+
+.copyright__link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  font-family: 'Arial';
+  font-size: 16px;
+  line-height: 18px;
+  color: $grey-50;
+  transition: color 0.8s ease-out;
+
+  &:hover {
+    color: $green;
+    animation: logo 0.8s;
+    animation-fill-mode: forwards;
+  }
+
+  &:active {
+    color: rgba(104, 183, 56, 0.3);
+  }
+}

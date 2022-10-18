@@ -1,0 +1,44 @@
+.picture-example__text {
+  font-size: 14px;
+  line-height: 20px;
+  color: $black;
+  text-transform: uppercase;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    text-align: right;
+    padding-top: 11px;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+  }
+}
+
+.picture-example__text-price {
+  @media (min-width: $tablet-width) {
+    padding-top: 10px;
+    display: inline-block;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 59px;
+  }
+}
+
+.picture-example__image {
+  height: 240px;
+  object-fit: cover;
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    min-height: 517px;
+    width: auto;
+  }
+}
+
+.picture-example--active {
+  display: inline;
+}

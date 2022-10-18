@@ -1,0 +1,249 @@
+.description__title {
+  font-family: 'Oswald';
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  color: $black;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+
+.description__slogan {
+  font-family: 'Oswald';
+  text-transform: uppercase;
+  color: $black;
+}
+
+// Description-main
+.description__main {
+  @media (min-width: $tablet-width) {
+    display: flex;
+  justify-content: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
+
+.description__main-container {
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+     padding-bottom: 514px;
+  }
+
+  @media (min-width: $desktop-width) {
+     padding-bottom: 186px;
+     margin: 0 auto;
+     width: 1300px;
+  }
+}
+
+.description__main-text {
+  background-color: $green;
+  min-width: 320px;
+  padding: 0 35px 164px;
+  background-image: url("../img/picture/backimage-mobile.png");
+  background-repeat: no-repeat;
+  background-position: center 0;
+  background-size: 320px 302px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/picture/backimage-mobile@2x.png");
+  }
+
+  @media (min-width: $tablet-width) {
+    background-color: transparent;
+    background-image: none;
+    padding: 0px 120px 0 0;
+    margin-bottom: 50px;
+    max-width: 550px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 23px 0 0 120px;
+  }
+}
+
+.description__title-main {
+  margin: 0 0 25px 0;
+  padding: 27px 0 0 0;
+  color: $white;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 41px 0;
+    padding: 35px 0 0 0;
+    text-align: left;
+    color: $black;
+  }
+}
+
+.description__slogan-main {
+  margin: 0;
+  font-size: 14px;
+  line-height: 14px;
+  color: $white;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    text-align: left;
+    color: $black;
+  }
+}
+
+.description__main-image {
+  margin: -134px auto 2px;
+  z-index: 2;
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 auto;
+    min-width: 709px;
+    min-height: 609px;
+    position: absolute;
+    z-index: -1;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -11px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 552px;
+    min-height: 500px;
+    z-index: 1;
+    top: -25px;
+    left: 763px;
+    margin: 0;
+  }
+}
+
+.description__title-break-mobile {
+  @media (max-width: 320px) {
+    display: none;
+  }
+}
+
+// Button
+.description__button {
+  display: block;
+  width: 100%;
+  color: $white;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: $green;
+  padding: 11px 10px 11px;
+  transition: 0.3s ease-out;
+
+  &:hover {
+    background-color: $green-100;
+  }
+
+  &:active {
+    background-color: $green-100;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    max-width: 244px;
+    padding: 17px 10px 17px;
+    margin-left: -5px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 120px;
+  }
+}
+
+.description__button-container {
+
+  @media (min-width: $tablet-width) {
+    padding: 0;;
+  }
+  padding: 0 20px;
+
+  @media (min-width: $desktop-width) {
+    top: 290px;
+    left: 170px;
+  }
+}
+
+// Break
+
+.description__title-break-tablet {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}
+
+//Description-form
+
+.description__form {
+  margin: 0 0 40px;
+
+  &--br {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      display: inline;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 65px;
+  }
+}
+
+.description__form-title {
+  padding: 27px 0 37px;
+
+  @media (min-width: $tablet-width) {
+    padding: 36px 0 54px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 27px 0 54px;
+  }
+}
+
+.description__form-slogan {
+  padding-right: 10px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    padding: 0;
+  }
+}
+
+// Description catalog
+
+.description__catalog {
+  border-bottom: 1px solid $grey-150;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
+}
+
+.description__catalog-title {
+  padding: 27px 10px 41px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 37px 10px 82px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 24px 10px 84px 0;
+  }
+}

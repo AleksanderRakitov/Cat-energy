@@ -1,0 +1,30 @@
+.information__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    padding: 5px 0 7px;
+    border-bottom: 1px solid $grey-100;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 5px 0 9px;
+  }
+}
+
+.information__dop-price {
+  padding-left: 50px;
+
+  @media (min-width: $desktop-width) {
+    padding-right: 38px;
+  }
+
+  &--padding {
+    padding-left: 55px;
+
+    @media (min-width: $desktop-width) {
+      padding-right: 47px;
+    }
+  }
+}
